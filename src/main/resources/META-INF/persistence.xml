@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+             
+     
+    <persistence-unit name="default">
+    	<class>com.iss.models.Cities</class>
+        <class>com.iss.models.Countries</class>
+        <class>com.iss.models.Customers</class>
+        <class>com.iss.models.Drivers</class>
+        <class>com.iss.models.Owners</class>
+        <class>com.iss.models.EmployeeTypes</class>
+        <class>com.iss.models.Employees</class>
+        <class>com.iss.models.Rentals</class>
+        <class>com.iss.models.States</class>
+        <class>com.iss.models.VehicleCapacity</class>
+        <class>com.iss.models.VehicleFuel</class>
+        <class>com.iss.models.VehicleMakes</class>
+        <class>com.iss.models.VehicleModels</class>
+        <class>com.iss.models.Vehicles</class>
+        <class>com.iss.models.VehicleTypes</class>
+        <class>com.iss.models.Bank</class>
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://LAPTOP-R0S81N27\SQLEXPRESS;databaseName=JavaCarRental;trustServerCertificate=true"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.SQLServerDialect"/>
+            <property name="javax.persistence.jdbc.user" value="sa"/>
+			<property name="javax.persistence.jdbc.password" value="vikranth"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+        </properties>
+    </persistence-unit>
+</persistence>
